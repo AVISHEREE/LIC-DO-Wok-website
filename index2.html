@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive LIC Navbar</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <span class="logo">
+          <img
+            src="./Assets/LICLogo.png"
+            alt="LIC Logo"
+            height="70"
+            width="160"
+          />
+        </span>
+      </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <div class="nav-right" id="nav-right">
+        <ul class="nav-links">
+          <li><a href="#">Become an Agent</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <button class="get-started">MAKE A CALL ↗</button>
+      </div>
+    </nav>
+
+    <!-- Main Body -->
+    <main>
+      <section class="profile-card">
+        <img
+          class="profile-img"
+          src="https://randomuser.me/api/portraits/men/75.jpg"
+          alt="Akshay Oza"
+        />
+        <h1>Akshay Oza</h1>
+        <div class="profile-title">LIC Development Officer</div>
+        <p class="profile-desc">
+          Akshay Oza is a trusted LIC Development Officer dedicated to helping
+          individuals and families secure their futures. With a passion for
+          personalized insurance solutions and financial planning, Akshay
+          ensures every client receives top-notch service and clear guidance.
+        </p>
+        <button class="contact-btn">Contact Akshay</button>
+      </section>
+    </main>
+    <!-- FAQ's Poster -->
+    <section class="faq-card">
+      <div class="lic-cards-unique">
+        <div class="lic-card-unique">
+          <div class="lic-card-bg"></div>
+          <div class="lic-card-content">
+            <div class="lic-unique-icon">🎁</div>
+            <h3>Benefits of LIC Agency</h3>
+            <p>
+              Rewarding Career, Attractive Remuneration, Independence, Unlimited
+              earning potential, Club Membership, Job Satisfaction
+            </p>
+            <a href="#" class="lic-unique-btn">READ MORE</a>
+          </div>
+        </div>
+        <div class="lic-card-unique">
+          <div class="lic-card-bg"></div>
+          <div class="lic-card-content">
+            <div class="lic-unique-icon">👐</div>
+            <h3>Support from Our Side</h3>
+            <p>
+              We arrange different training schedules for full time agents and
+              part time agents. We provide complete 25 hours of training.
+            </p>
+            <a href="#" class="lic-unique-btn">READ MORE</a>
+          </div>
+        </div>
+        <div class="lic-card-unique">
+          <div class="lic-card-bg"></div>
+          <div class="lic-card-content">
+            <div class="lic-unique-icon">👥</div>
+            <h3>Can I become an LIC Agent?</h3>
+            <p>
+              LIC agency is a good for those, who like meeting the people and
+              have big ambitions to start and own business without investment.
+            </p>
+            <a href="#" class="lic-unique-btn">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ-home -->
+    <section class="faq-calm-section">
+      <div class="faq-calm-container">
+        <!-- Left Side: Illustration or Image -->
+        <div class="faq-calm-visual">
+          <!-- You can replace this SVG with any image or illustration you like -->
+          <div style="text-align: center">
+            <div
+              style="
+                color: #003399;
+                font-size: 1.3rem;
+                margin-top: 1rem;
+                font-weight: 600;
+              "
+            >
+              Trusted protection, always with LIC
+            </div>
+          </div>
+        </div>
+        <!-- Right Side: FAQ Cards -->
+        <div class="faq-calm-faqs">
+          <h2 class="faq-calm-title">Frequently Asked Questions</h2>
+          <div class="faq-calm-list">
+            <details open>
+              <summary>
+                <span class="faq-calm-qicon">🎯</span>
+                What are the benefits of becoming an LIC agent?
+                <span class="faq-calm-arrow"></span>
+              </summary>
+              <div class="faq-calm-answer">
+                LIC agents enjoy unlimited earning potential, flexible hours,
+                recognition, and the satisfaction of helping families secure
+                their futures.
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-calm-qicon">📝</span>
+                Who can apply to be an LIC agent?
+                <span class="faq-calm-arrow"></span>
+              </summary>
+              <div class="faq-calm-answer">
+                Anyone 18+ years old with at least a 10th standard pass and a
+                passion for people can apply!
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-calm-qicon">⏱️</span>
+                How long does it take to become an agent?
+                <span class="faq-calm-arrow"></span>
+              </summary>
+              <div class="faq-calm-answer">
+                With training and the IRDAI exam, you can become a licensed
+                agent in just a few weeks.
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-calm-qicon">🚀</span>
+                What support will I get from LIC?
+                <span class="faq-calm-arrow"></span>
+              </summary>
+              <div class="faq-calm-answer">
+                LIC provides training, mentorship, marketing tools, and ongoing
+                support to help you succeed.
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-calm-qicon">💸</span>
+                How much can I earn?
+                <span class="faq-calm-arrow"></span>
+              </summary>
+              <div class="faq-calm-answer">
+                Your income is commission-based and has no upper limit-the more
+                you help, the more you earn!
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hamburger menu JS -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navRight = document.getElementById("nav-right");
+
+      hamburger.addEventListener("click", () => {
+        navRight.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
